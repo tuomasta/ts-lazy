@@ -1,4 +1,4 @@
 node_modules
 lib/**/*.js
 lib/**/*.d.ts
-lib/**/*.map.js
+lib/**/*.js.map
