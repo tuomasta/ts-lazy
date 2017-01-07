@@ -1,0 +1,34 @@
+{
+  "name": "ts-lazy",
+  "version": "0.0.1",
+  "description": ".Net lazy for typescript",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "npm run build",
+    "test": "jasmine",
+    "prebuild": "npm run lint",
+    "build": "npm run compile",
+    "lint": "tslint lib/**/*.ts",
+    "compile": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tuomasta/ts-lazy.git"
+  },
+  "keywords": [
+    ".net",
+    "typescript",
+    "lazy"
+  ],
+  "author": "Tuomas Talus",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/tuomasta/ts-lazy/issues"
+  },
+  "homepage": "https://github.com/tuomasta/ts-lazy#readme",
+  "devDependencies": {
+    "@types/jasmine": "^2.5.40",
+    "tslint": "^4.3.1",
+    "typescript": "^2.1.4"
+  }
+}
