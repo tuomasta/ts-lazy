@@ -8,7 +8,6 @@
         "pretty": true
     },
     "include": [
-        "index.ts",
         "lib/**/*.ts"
     ]
 }
