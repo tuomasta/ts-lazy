@@ -1,6 +1,6 @@
 {
   "name": "ts-lazy",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": ".Net lazy for typescript",
   "main": "./dist/index.js",
   "typings": "./lib/index.d.ts",
