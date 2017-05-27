@@ -6,7 +6,6 @@
   "typings": "./lib/index.d.ts",
   "scripts": {
     "prepublish": "npm run build",
-    "publish": "npm run publish",
     "prebuild": "npm run clean && npm run lint",
     "build": "npm run compile",
     "postbuild": "npm run test:single",
