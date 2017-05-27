@@ -37,6 +37,7 @@
   "homepage": "https://github.com/tuomasta/ts-lazy#readme",
   "devDependencies": {
     "@types/jasmine": "^2.5.40",
+    "jasmine": "^2.6.0",
     "rimraf": "^2.5.4",
     "tslint": "^4.3.1",
     "typescript": "^2.3.3",
