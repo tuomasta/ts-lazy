@@ -13,7 +13,7 @@
     "test": "watch \"npm run compile && npm run test:single\" src/",
     "lint": "tslint lib/**/*.ts",
     "compile": "tsc",
-    "clean": "rimraf lib/**/*.js && rimraf lib/**/*.d.ts && rimraf lib/**/*.js.map",
+    "clean": "rimraf dist",
     "jasmine": "jasmine JASMINE_CONFIG_PATH=./jasmine.json"
   },
   "repository": {
