@@ -2,13 +2,14 @@
   "name": "ts-lazy",
   "version": "0.0.1",
   "description": ".Net lazy for typescript",
-  "main": "./lib/index.js",
+  "main": "./dist/index.js",
   "typings": "./lib/index.d.ts",
   "scripts": {
-    "pretest": "npm run build",
-    "test": "npm run jasmine",
     "prebuild": "npm run clean && npm run lint",
     "build": "npm run compile",
+    "postbuild": "npm run test:single",
+    "test:single": "npm run jasmine",
+    "test": "watch \"npm run compile && npm run test:single\" src/",
     "lint": "tslint lib/**/*.ts",
     "compile": "tsc",
     "clean": "rimraf lib/**/*.js && rimraf lib/**/*.d.ts && rimraf lib/**/*.js.map",
@@ -28,11 +29,17 @@
   "bugs": {
     "url": "https://github.com/tuomasta/ts-lazy/issues"
   },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
   "homepage": "https://github.com/tuomasta/ts-lazy#readme",
   "devDependencies": {
     "@types/jasmine": "^2.5.40",
     "rimraf": "^2.5.4",
     "tslint": "^4.3.1",
-    "typescript": "^2.1.4"
+    "typescript": "^2.3.3",
+    "watch": "^1.0.2"
   }
 }

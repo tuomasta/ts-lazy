@@ -5,9 +5,10 @@
         "noImplicitAny": false,
         "sourceMap": true,
         "declaration": true,
-        "pretty": true
+        "pretty": true,
+        "outDir": "dist"
     },
     "include": [
-        "lib/**/*.ts"
+        "src/**/*.ts"
     ]
 }
